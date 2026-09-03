@@ -1,0 +1,18 @@
+{
+  "name": "Menu de Musicas",
+  "short_name": "Musicas",
+  "description": "Um menu pessoal de musicas e sagas do EPIC THE MUSICAL.",
+  "start_url": "./teste.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icone.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+				* {
+					box-sizing: border-box;
+				}
+
+				h2 {
+					text-align: center;
+					font-weight: 700;
+					color: white;
+					text-shadow: 0px 0px 25px white;
+					font-family: "Times New Roman", Times, sans-serif;
+					border: 5px double white;
+					overflow-x: hidden;
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+				}
+				
+				body {
+					min-width: 0;
+					margin: 0;
+
+					.header {
+						padding: 16px;
+					}
+					
+					min-height: 100vh;
+					background-color: rgba(0, 0, 0, 1);
+					border: 5px double white;
+					border-radius: 10px;
+					box-shadow: inset 0px 0px 15px 5px white;
+				}
+
+				.container {
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-areas:
+						"header"
+						"botoes"
+						"menus" 
+						"footer";
+				}
+
+				.header {grid-area: header;}
+				.botoes {grid-area: botoes;}
+				.menus {grid-area: menus;}
+				.footer {grid-area: footer;}
+				
+				.header,
+				.footer {
+					text-align: center;
+				}
+				
+				.subcategorias {
+					flex-basis: 100%;
+					width: min(100%, 600px);
+					margin: 12px auto 0; 
+					display: none;
+					grid-template-rows: auto auto auto;
+					grid-template-columns: auto auto auto;
+					gap: 2px;
+					grid-template-areas:
+						"titulo titulo titulo"
+						"rock poprock pop"
+						"dubstep lovesongs brazilian";
+					font-weight: 700;
+					background-color: rgba(0, 0, 0, 1);
+					border: 5px double white;
+					color: rgba(255, 255, 255, 1);
+					border-radius: 25px 5px;
+					padding: 0px 5px 0px 5px;
+					font-family: "Times New Roman", Times, sans-serif;
+					box-shadow: inset 0px 0px 5px 2.5px white;
+				}
+
+				@media (max-width: 600px) {
+					.subcategorias {
+						flex-basis: 100%;
+						grid-template-columns: 1fr 1fr;
+						grid-template-areas:
+							"titulo titulo"
+							"rock poprock"
+							"pop dubstep"
+							"lovesongs brazilian";
+					}
+				}
+
+				.titulo {grid-area: titulo;}
+				.rock {grid-area: rock;}
+				.poprock {grid-area: poprock;}
+				.pop {grid-area: pop;}
+				.dubstep {grid-area: dubstep;}
+				.lovesongs {grid-area: lovesongs;}
+				.brazilian {grid-area: brazilian;}
+				
+				.subcategorias a {
+					font-weight: 700;
+					color: rgba(255, 255, 255, 1);
+					font-family: "Times New Roman", Times, sans-serif;
+					border: 5px double white;
+					text-decoration: none;
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+					box-shadow: 0px 0px 5px 2.5px white;
+					transition: 0.2s;
+				}
+
+				.subcategorias a:hover {
+					background-color: white;
+					color: black;
+					box-shadow: 0px 0px 15px 5px white;
+					border: 5px double black;
+					border-radius: 25px 5px;
+					transform: scale(1.03);
+				}
+
+				.subcategorias p{
+					text-align: center;
+				}
+
+				.subcategorias:not([hidden]) {
+					display: grid;
+				}
+
+				.titulo {
+					font-weight: 900;
+					color: rgba(255, 255, 255, 1);
+					text-shadow: 0px 0px 25px white;
+					font-family: "Times New Roman", Times, sans-serif;
+				}
+
+				.botoes {
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					gap: 10px;
+					padding: 16px;
+				}
+
+				.botoes button {
+					font-weight: 700;
+					background-color: rgba(0, 0, 0, 1);
+					border: 5px double white;
+					color: rgba(255, 255, 255, 1);
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+					font-family: "Times New Roman", Times, sans-serif;
+					transition: 0.2s;
+				}
+
+				.botoes button:hover {
+					cursor: pointer;
+					background-color: white;
+					color: black;
+					box-shadow: 0px 0px 15px 5px white;
+					transform: scale(1.03);
+					border: 5px double black;
+					border-radius: 25px 5px;
+				}
+
+				.footer {
+					margin-top: 40px;
+					padding: 16px;
+					font-weight: 700;
+					color: white;
+					text-shadow: 0px 0px 25px white;
+					font-family: "Times New Roman", Times, sans-serif;
+				}
+
+				.epicSagas[hidden],
+				.menus[hidden],
+				.subcategorias[hidden] {
+					display: none;
+				}
+
+				.menus {
+					display: grid;
+					grid-template-columns: repeat(3, minmax(0, 1fr));
+					gap: 16px;
+					padding: 16px;
+				}
+
+				@media (max-width: 600px) {
+					.menus {
+						grid-template-columns: 1fr;
+					}
+				}
+
+				.menus a,
+				.epicSagas a {
+					display: block;
+					padding: 8px 20px;
+				}
+
+				.menus a {
+					font-weight: 700;
+					color: white;
+					font-family: "Times New Roman", Times, sans-serif;
+					border: 5px double white;
+					text-decoration: none;
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+					transition: 0.2s;
+				}
+
+				.musicas {
+					display: block;
+				}
+
+				.epicSagas {
+					display: none;
+					grid-template-columns: repeat(3, minmax(0, 1fr));
+					grid-area: menus;
+					gap: 16px;
+					padding: 16px;
+					grid-template-areas:
+						"the_Troy_Saga the_Cyclops_Saga the_Ocean_Saga"
+						"the_Circe_Saga the_Underworld_Saga the_Thunder_Saga"
+						"the_Wisdom_Saga the_Vengeance_Saga the_Ithaca_Saga";
+				}
+				.epicSagas:not([hidden]) {
+					display: grid;
+				}
+
+				.epicSagas > div {
+					min-width: 0;
+					padding: 8px;
+				}
+
+				@media (max-width: 600px) {
+					.epicSagas {
+						grid-template-columns: 1fr;
+						grid-template-areas:
+							"the_Troy_Saga"
+							"the_Cyclops_Saga"
+							"the_Ocean_Saga"
+							"the_Circe_Saga"
+							"the_Underworld_Saga"
+							"the_Thunder_Saga"
+							"the_Wisdom_Saga"
+							"the_Vengeance_Saga"
+							"the_Ithaca_Saga";
+					}
+				}
+
+				.theTroySaga {grid-area: the_Troy_Saga;}
+				.theCyclopsSaga {grid-area: the_Cyclops_Saga;}
+				.theOceanSaga {grid-area: the_Ocean_Saga;}
+				.theCirceSaga {grid-area: the_Circe_Saga;}
+				.theUnderworldSaga {grid-area: the_Underworld_Saga;}
+				.theThunderSaga {grid-area: the_Thunder_Saga;}
+				.theWisdomSaga {grid-area: the_Wisdom_Saga;}
+				.theVengeanceSaga {grid-area: the_Vengeance_Saga;}
+				.theIthacaSaga {grid-area: the_Ithaca_Saga;}
+				
+				.epicSagas h2 {
+					font-weight: 700;
+					color: rgba(255, 255, 255, 1);
+					text-shadow: 0px 0px 25px white;
+					font-family: "Times New Roman", Times, sans-serif;
+					border: 5px double white;
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+				}
+
+				.epicSagas a {
+					text-align: center;
+					font-weight: 700;
+					color: rgba(255, 255, 255, 1);
+					font-family: "Times New Roman", Times, sans-serif;
+					border: 5px double white;
+					text-decoration: none;
+					border-radius: 25px 5px;
+					padding: 0px 20px 0px 20px;
+					transition: 0.2s;
+				}
+
+				.epicSagas a:hover {
+					background-color: white;
+					color: black;
+					box-shadow: 0px 0px 15px 5px white;
+					transform: scale(1.03);
+					border: 5px double black;
+					border-radius: 25px 5px;
+				}
+
+				.menus a:hover {
+					background-color: white;
+					color: black;
+					box-shadow: 0px 0px 15px 5px white;
+					transform: scale(1.03);
+					border: 5px double black;
+					border-radius: 25px 5px;
+				}
+
+				button:focus-visible, 
+				a:focus-visible{
+					outline: 3px solid yellow;
+					outline-offset: 4px;
+				}
