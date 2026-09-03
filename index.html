@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+	<html lang="pt-BR">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="theme-color" content="#000000">
+			<link rel="manifest" href="manifest.json">
+			<link rel="icon" href="icone.svg" type="image/svg+xml">
+			<script src="testes.js" defer></script>
+			<link rel="stylesheet" href="testes.css">
+			<title> Menu de Músicas </title>
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<h1 class="titulo"> - Menu de Músicas - </h1>
+				</div>
+				<div class="botoes">
+				<button 
+					type="button"  
+					id="categorias" 
+					aria-expanded="false"
+					aria-controls="subcategorias"
+				> - Categorias - </button>
+
+				<button type="button" id="default"> - Default - </button>
+
+				<button type="button" 		
+					id="epic" 
+					aria-expanded="false" 
+					aria-controls="epic-sagas"
+				> - EPIC THE MUSICAL - </button>
+				
+				<div class="subcategorias" id="subcategorias" hidden>
+					<p class="titulo"> - Subcategorias -</p>
+					<a href="#" class="rock"> - Rock - </a>
+					<a href="#" class="poprock"> - PopRock - </a>
+					<a href="#" class="pop"> - Pop - </a>
+					<a href="#" class="dubstep"> - Dubstep - </a>
+					<a href="#" class="lovesongs"> - LoveSongs - </a>
+					<a href="#" class="brazilian"> - Brazilian - </a>
+				</div>
+			</div>
+			<div class="menus" id="menus">
+					<div class="menu1" id="brazilian">
+						<h2> - Brazilian - </h2>
+						<a href="https://youtu.be/ltxmyVTbKeQ" target="_blank" rel="noopener noreferrer" class="musicas"> Estrelar - Marcos Valle </a>
+					</div>
+					
+					<div class="menu2" id="dubstep">
+						<h2> - Dubstep - </h2>
+						<a href="https://youtu.be/g6t8g6ka4W0" target="_blank" rel="noopener noreferrer" class="musicas"> Bla Bla Bla - GiGi D'Agostino </a>
+						<a href="https://youtu.be/oFrGxhd0_As" target="_blank" rel="noopener noreferrer" class="musicas"> Colorblind - Panda Eyes </a>
+					</div>
+					
+					<div class="menu3" id="lovesongs">
+						<h2> - Love Songs - </h2>
+						<a href="https://youtu.be/izGwDsrQ1eQ" target="_blank" rel="noopener noreferrer" class="musicas"> Careless Whispers - George Michael </a>
+						<a href="https://youtu.be/-AkztddoOms" target="_blank" rel="noopener noreferrer" class="musicas"> Hello - Lionel Richie </a>
+						<a href="https://youtu.be/YFood_bTOX4" target="_blank" rel="noopener noreferrer" class="musicas"> How Am I Supposed to Live Without You - Michael Bolton </a>						
+						<a href="https://youtu.be/B7ZL9W6SPgM" target="_blank" rel="noopener noreferrer" class="musicas"> Is This Love - Whitesnake </a>
+						<a href="https://youtu.be/UrIiLvg58SY" target="_blank" rel="noopener noreferrer" class="musicas"> More Than Words - Extreme </a>
+						<a href="https://youtu.be/uH64qV71uUQ" target="_blank" rel="noopener noreferrer" class="musicas"> Separate Ways (worlds apart) - Journey </a>
+						<a href="https://youtu.be/p2Rch6WvPJE" target="_blank" rel="noopener noreferrer" class="musicas"> Un-Break My Heart - Toni Braxton </a>
+					</div>
+					
+					<div class="menu4" id="pop">
+						<h2> - Pop - </h2>
+						<a href="https://youtu.be/-DlMoJ2V6uk" target="_blank" rel="noopener noreferrer" class="musicas"> Bad - Michael Jackson </a>
+						<a href="https://youtu.be/kOn-HdEg6AQ" target="_blank" rel="noopener noreferrer" class="musicas"> Beat It - Michael Jackson </a>
+						<a href="https://youtu.be/Kr4EQDVETuA" target="_blank" rel="noopener noreferrer" class="musicas"> Billie Jean - Michael Jackson </a>
+						<a href="https://youtu.be/J7p4bzqLvCw" target="_blank" rel="noopener noreferrer" class="musicas"> Blinding Lights - The Weeknd </a>
+						<a href="https://youtu.be/VtM-rHPwN7o" target="_blank" rel="noopener noreferrer" class="musicas"> The Way You Make Me Feel - Michael Jackson </a>
+					</div>
+					
+					<div class="menu5" id="poprock">
+						<h2> - Pop Rock - </h2>
+						<a href="https://youtu.be/xG16sdjLtc0" target="_blank" rel="noopener noreferrer" class="musicas"> Bohemian Rhapsody - Queen </a>
+						<a href="https://youtu.be/cBMXQrW3VNA" target="_blank" rel="noopener noreferrer" class="musicas"> Killer Queen - Queen </a>
+						<a href="https://youtu.be/qQzdAsjWGPg" target="_blank" rel="noopener noreferrer" class="musicas"> My Way - Frank Sinatra </a>
+						<a href="https://youtu.be/9jK-NcRmVcw" target="_blank" rel="noopener noreferrer" class="musicas"> The Final Countdown - Europe </a>
+					</div>
+					
+					<div class="menu6" id="rock">
+						<h2> - Rock - </h2>
+						<a href="https://youtu.be/2X_2IdybTV0" target="_blank" rel="noopener noreferrer" class="musicas"> Carry On My Wayward Son - Kansas </a>
+						<a href="https://youtu.be/kLKr342VKaU" target="_blank" rel="noopener noreferrer" class="musicas"> I Was Made For Lovin' You - Kiss </a>
+						<a href="https://youtu.be/y6lfK3bH4z8" target="_blank" rel="noopener noreferrer" class="musicas"> November Rain - Guns N' Roses </a>
+						<a href="https://youtu.be/odx2_KdUI6Y" target="_blank" rel="noopener noreferrer" class="musicas"> Slip Away - Dry Cell </a>
+						<a href="https://youtu.be/u9Dg-g7t2l4" target="_blank" rel="noopener noreferrer" class="musicas"> Sound Of Silence - Disturbed </a>
+						<a href="https://youtu.be/it9bXaOYqVE" target="_blank" rel="noopener noreferrer" class="musicas"> Still Loving You - Scorpions </a>
+						<a href="https://youtu.be/-nlDy6h-v9c" target="_blank" rel="noopener noreferrer" class="musicas"> This ain't a love song - Bon Jovi </a>
+					</div>
+				</div>
+				
+
+				<div class="epicSagas" id="epic-sagas" hidden>
+					<div class="theTroySaga">
+						<h2> - The Troy Saga - </h2>
+						<a href="https://youtu.be/bWIgy-Ls-SU" target="_blank" rel="noopener noreferrer"> - The Horse and the Infant - </a>
+						<a href="https://youtu.be/hNdvp9Qo8PA" target="_blank" rel="noopener noreferrer"> - Just a Man - </a>
+						<a href="https://youtu.be/x3KOt-3T73c" target="_blank" rel="noopener noreferrer"> - Full Speed Ahead - </a>
+						<a href="https://youtu.be/-oMZw8DQbaI" target="_blank" rel="noopener noreferrer"> - Open Arms - </a>
+						<a href="https://youtu.be/oB8lqgO9e24" target="_blank" rel="noopener noreferrer"> - Warrior of the Mind - </a>
+					</div>
+					<div class="theCyclopsSaga">
+						<h2> - The Cyclops Saga - </h2>
+						<a href="https://youtu.be/nDQyFHmuQls" target="_blank" rel="noopener noreferrer"> - Polyphemus - </a>
+						<a href="https://youtu.be/rND9-qeA7Lo" target="_blank" rel="noopener noreferrer"> - Survive - </a>
+						<a href="https://youtu.be/NGxrhdgAg18" target="_blank" rel="noopener noreferrer"> - Remember Them - </a>
+						<a href="https://youtu.be/xrFaGilus6o" target="_blank" rel="noopener noreferrer"> - My Goodbye - </a>
+					</div>
+					<div class="theOceanSaga">
+						<h2> - The Ocean Saga - </h2>
+						<a href="https://youtu.be/sRntPU_s-gI" target="_blank" rel="noopener noreferrer"> - Storm - </a>
+						<a href="https://youtu.be/ZxQHl2fVJ-s" target="_blank" rel="noopener noreferrer"> - Luck Runs Out - </a>
+						<a href="https://youtu.be/Z-Y0iMmFzFE" target="_blank" rel="noopener noreferrer"> - Keep Your Friends Close - </a>
+						<a href="https://youtu.be/3dzBlSeCJNg" target="_blank" rel="noopener noreferrer" > - Ruthlessness -  </a>
+					</div>
+					<div class="theCirceSaga">
+						<h2> - The Circe Saga - </h2>
+						<a href="https://youtu.be/Mz2ASoe6OG0" target="_blank" rel="noopener noreferrer"> - Puppeteer - </a>
+						<a href="https://youtu.be/xkIBM71E0_w" target="_blank" rel="noopener noreferrer"> - Wouldn't You Like - </a>
+						<a href="https://youtu.be/km6NITbLVHc" target="_blank" rel="noopener noreferrer"> - Done For - </a>
+						<a href="https://youtu.be/uXdLAOBANGE" target="_blank" rel="noopener noreferrer"> - There Are Other Ways - </a>
+					</div>
+					<div class="theUnderworldSaga">
+						<h2> - The Underworld Saga - </h2>
+						<a href="https://youtu.be/cyqul8pKHko" target="_blank" rel="noopener noreferrer" > - The Underworld -  </a>
+						<a href="https://youtu.be/BZ8qL5P270Q" target="_blank" rel="noopener noreferrer" > - No Longer You -  </a>
+						<a href="https://youtu.be/4Q0Un9PQ0wk" target="_blank" rel="noopener noreferrer" > - Monster -  </a>
+					</div>
+					<div class="theThunderSaga">
+						<h2> - The Thunder Saga - </h2>
+						<a href="https://youtu.be/-u_-wpcpY-0" target="_blank" rel="noopener noreferrer"> - Suffering - </a>
+						<a href="https://youtu.be/x2r7dKWFbP8" target="_blank" rel="noopener noreferrer"> - Different Beast - </a>
+						<a href="https://youtu.be/PTGWC85tLfg" target="_blank" rel="noopener noreferrer"> - Scylla - </a>
+						<a href="https://youtu.be/x_xJEfDB7y0" target="_blank" rel="noopener noreferrer"> - Mutiny - </a>
+						<a href="https://youtu.be/cAId1J7msWI" target="_blank" rel="noopener noreferrer"> - Thunder Bringer -</a>
+					</div>
+					<div class="theWisdomSaga">
+						<h2> - The Wisdom Saga - </h2>
+						<a href="https://youtu.be/Z9NNit-z8wE" target="_blank" rel="noopener noreferrer"> - Legendary - </a>
+						<a href="https://youtu.be/-gqU2V1snnc" target="_blank" rel="noopener noreferrer"> - Little Wolf - </a>
+						<a href="https://youtu.be/3pIXn3zHkpc" target="_blank" rel="noopener noreferrer"> - We'll Be Fine - </a>
+						<a href="https://youtu.be/jWOpikivhbQ" target="_blank" rel="noopener noreferrer"> - Love in Paradise - </a>
+						<a href="https://youtu.be/5m3Xe7iDivk" target="_blank" rel="noopener noreferrer"> - God Games - </a>
+					</div>
+					<div class="theVengeanceSaga">
+						<h2> - The Vengeance Saga - </h2>
+						<a href="https://youtu.be/7M3gzo-hSCo" target="_blank" rel="noopener noreferrer"> - Not Sorry for Loving You - </a>
+						<a href="https://youtu.be/jZW2GnEcjpM" target="_blank" rel="noopener noreferrer"> - Dangerous - </a>
+						<a href="https://youtu.be/4n0U1Erga90" target="_blank" rel="noopener noreferrer"> - Charybdis - </a>
+						<a href="https://youtu.be/8njnTRKGdYw" target="_blank" rel="noopener noreferrer"> - Get in the Water - </a>
+						<a href="https://youtu.be/T3rnBuSTNhY" target="_blank" rel="noopener noreferrer"> - Six Hundred Strike - </a>
+					</div>
+					<div class="theIthacaSaga">
+						<h2> - The Ithaca Saga - </h2>
+						<a href="https://youtu.be/Bb6ssHUxrNk" target="_blank" rel="noopener noreferrer"> - The Challenge - </a>
+						<a href="https://youtu.be/oeDDZNKHOVo" target="_blank" rel="noopener noreferrer"> - Hold Them Down - </a>
+						<a href="https://youtu.be/UjcV3CYfCsM" target="_blank" rel="noopener noreferrer"> - Odysseus - </a>
+						<a href="https://youtu.be/FBfT0E6oF6I" target="_blank" rel="noopener noreferrer"> - I Can't Help but Wonder - </a>
+						<a href="https://youtu.be/rF5tJ8xuaIc" target="_blank" rel="noopener noreferrer"> - Would You Fall in Love with Me Again - </a>
+					</div>
+				</div>
+				
+				
+				<div class="footer">
+					<p> - Este site foi feito por um Pato - </p>
+				</div>
+			</div>
+		</body>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js").then(registration => {
+					registration.update();
+				});
+			}
+		</script>
+	</html>
