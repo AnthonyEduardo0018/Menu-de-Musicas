@@ -21,6 +21,7 @@
 					.header {
 						padding: 16px;
 					}
+					
 					min-height: 100vh;
 					background-color: rgba(0, 0, 0, 1);
 					border: 5px double white;
@@ -42,8 +43,8 @@
 				.botoes {grid-area: botoes;}
 				.menus {grid-area: menus;}
 				.footer {grid-area: footer;}
-				.header,
 				
+				.header,
 				.footer {
 					text-align: center;
 				}
@@ -168,17 +169,6 @@
 				.menus[hidden],
 				.subcategorias[hidden] {
 					display: none;
-				}
-
-				#artistas:disabled, 
-				.rock:disabled, 
-				.poprock:disabled, 
-				.pop:disabled, 
-				.dubstep:disabled, 
-				.lovesongs:disabled, 
-				.brazilian:disabled {
-					cursor: not-allowed;
-					opacity: 0.7;
 				}
 
 				.menus {

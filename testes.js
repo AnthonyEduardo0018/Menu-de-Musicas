@@ -2,9 +2,11 @@ console.log("teste.js carregado com sucesso!");
 
 const categorias = document.getElementById("categorias");
 const subcategorias = document.getElementsByClassName("subcategorias")[0];
+const botaoDefault = document.getElementById("default");
 const epic = document.getElementById("epic");
 const menus = document.getElementById("menus");
 const epicSagas = document.querySelectorAll(".epicSagas");
+const categoriasDeMusicas = document.querySelectorAll(".menus > [id]");
 
 
 categorias.addEventListener("click", function() {
@@ -28,9 +30,35 @@ epic.addEventListener("click", function() {
     epic.setAttribute("aria-expanded", String(modoEpic));
 });
 
+botaoDefault.addEventListener("click", function() {
+    for (const categoria of categoriasDeMusicas) {
+        categoria.hidden = false;
+    }
+
+    menus.hidden = false;
+
+    for (const saga of epicSagas) {
+        saga.hidden = true;
+    }
+
+    epic.classList.remove("ativo");
+    epic.setAttribute("aria-expanded", "false");
+    subcategorias.hidden = true;
+    categorias.setAttribute("aria-expanded", "false");
+});
+
 document.querySelectorAll(".subcategorias a").forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault();
+
+        const categoriaSelecionada = this.className;
+
+        for (const categoria of categoriasDeMusicas) {
+            categoria.hidden = categoria.id !== categoriaSelecionada;
+        }
+
+        subcategorias.hidden = true;
+        categorias.setAttribute("aria-expanded", "false");
     });
 });
 
